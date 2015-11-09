@@ -1,0 +1,22 @@
+<template name="user_info">
+
+
+        <ul>
+
+            <li>
+                <a href="#">
+                    <i class="material-icons">notifications</i>
+                </a>
+            </li>
+
+            <li>
+                {{#if currentUser}}
+                    {{> user_loggedin}}
+                {{else}}
+                    {{> user_loggedout}}
+                {{/if}}
+            </li>
+
+        </ul>
+
+</template>

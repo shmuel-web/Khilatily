@@ -1,0 +1,14 @@
+
+<template name="layout">
+  {{> nav}}
+      
+	{{> yield}}
+
+<!-- will ce shown onley to a logd -in user -->
+	{{#if currentUser}}
+
+		{{> user_menu}}
+
+	{{/if}}
+   
+</template>
