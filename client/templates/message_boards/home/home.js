@@ -4,3 +4,7 @@ Template.home.helpers({
 		return Messages.find();
 	}
 });
+
+Template.home.onRendered(function(){
+
+})

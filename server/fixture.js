@@ -12,55 +12,57 @@ if (Options.find().count() === 0){
 	});
 
 	Options.insert({
-		name: 'עסקים',
+		name: 'עסקים מקומיים',
 		route: 'business'
 	});
 
-	Options.insert({
-		name: 'שירותים',
-		route: 'services'
-	});
 
 	Options.insert({
 		name: 'עזרה הדדית',
 		route: 'mutual_help'
 	});
 
-	// Options.insert({
-	// 	name: 'פינת אבידות',
-	// 	route: 'lost&founds'
-	// });
+	Options.insert({
+		name: 'פינת אבידות',
+		route: 'lost_found'
+	});
 }
 
 if (Messages.find().count() === 0){
 
 	Messages.insert({
-		text: 'מחפש טרמפ לירושלים'
+		text: 'מחפש טרמפ לירושלים',
+		user_name: 'shmuel'
 	
 	});
 
 	Messages.insert({
-		text: 'חבית גדולה למסירה'
+		text: 'חבית גדולה למסירה',
+		user_name: 'shmuel'
 	
 	});
 
 	Messages.insert({
-		text: 'ה הוא המלך'
+		text: 'ה הוא המלך',
+		user_name: 'shmuel'
 	
 	});
 
 	Messages.insert({
-		text: 'מחפש טרמפ לירושלים'
+		text: 'מחפש טרמפ לירושלים',
+		user_name: 'shmuel'
 	
 	});
 
 	Messages.insert({
-		text: 'חבית גדולה למסירה'
+		text: 'חבית גדולה למסירה',
+		user_name: 'shmuel'
 	
 	});
 
 	Messages.insert({
-		text: 'ה הוא המלך'
+		text: 'ה הוא המלך',
+		user_name: 'shmuel'
 	
 	});
 }

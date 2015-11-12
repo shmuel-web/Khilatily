@@ -1,0 +1,10 @@
+<template name = "business">
+	<h1>עסקים בקהילה</h1>
+
+    <div class="row">
+        {{#each messages}}
+            {{> simple_message}}
+        {{/each}}
+    </div>
+
+</template>

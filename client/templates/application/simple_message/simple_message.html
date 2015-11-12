@@ -1,19 +1,31 @@
 <template name = "simple_message">
 
-      <div class="col s12 m4 l3">
-        <div class="card-panel hoverable">
-	        <div class="card-content">
-	        	<span class="">{{text}}
-	          </span>
+    <div class="col l3 m4 s12">
+
+        <div class="card hoverable">
+	        <div class="card-content ">
+	        	{{text}}
+
 
 	        </div>
 	        <div class="card-action">
-	        	<div class="chip">
+	        	<div class="chip hoverable z-depth-1 truncate">
 				    <img src="user-img/rav.jpg" alt="Contact Person">
-				    Jane Doe
+				    {{user_name}}
+                    <!--TODO create a phone call link btn & a personal message within the app -->
+                    <!--<a class="waves-effect waves-red btn-floating transparent"><i class="material-icons">phone</i></a>-->
+                    <!--<a class="waves-effect waves-green btn-floating transparent"><i class="material-icons">message</i></a>-->
+                    <i class="material-icons">phone</i>
+                    <i class="material-icons">message</i>
 				</div>
+
+
+
+
+
 	        </div>
         </div>
-      </div>
+
+    </div>
   
 </template>
