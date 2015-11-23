@@ -2,21 +2,24 @@
 
     <div class="col l3 m4 s12">
 
-        <div class="card hoverable">
-	        <div class="card-content ">
-	        	{{text}}
+        <div class="card hoverable small">
+	        <div class="card-content right-align">
+                <span class="blue-text card-title">{{head_line}}</span>
+                <p>{{oneLineText}}</p>
+
 
 
 	        </div>
 	        <div class="card-action">
-	        	<div class="chip hoverable z-depth-1 truncate">
-				    <img src="user-img/rav.jpg" alt="Contact Person">
-				    {{user_name}}
+	        	<div class="chip hoverable   truncate">
+                    <i class="material-icons">phone</i>
+                    <i class="material-icons">message</i>
+                    {{user_name}}
                     <!--TODO create a phone call link btn & a personal message within the app -->
                     <!--<a class="waves-effect waves-red btn-floating transparent"><i class="material-icons">phone</i></a>-->
                     <!--<a class="waves-effect waves-green btn-floating transparent"><i class="material-icons">message</i></a>-->
-                    <i class="material-icons">phone</i>
-                    <i class="material-icons">message</i>
+                    <img src="user-img/rav.jpg" alt="Contact Person">
+
 				</div>
 
 

@@ -1,28 +1,31 @@
 <template name = "nav">
-    <nav>
-        <div class="nav-wrapper red">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper {{tColor}} darken-2">
 
-            <a href="#" class="brand-logo center">קהילתי-לי</a>
-    
-            <div class="right">
 
-                {{> user_info}}
-                
+                <a href="#" class="brand-logo center"></a>
+
+                <div class="right">
+
+                    {{> user_info}}
+
+                </div>
+
+                <ul id="slide-out" class="side-nav">
+                    <li><a href="{{urlFor route='home'}}">ראשי</a></li>
+                    <li><a href="{{pathFor 'sales'}}">מבצעים</a></li>
+                    <li><a href="{{pathFor 'special_events'}}">ארועים מיוחדים</a></li>
+                    <li><a href="{{pathFor 'business'}}">עסקים מקומיים</a></li>
+                    <li><a href="{{pathFor 'mutual_help'}}">עזרה הדדית</a></li>
+                    <li><a href="{{pathFor 'lost_found'}}">אבידות</a></li>
+                    <!--TODO add info_pages links-->
+
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">{{icon}}</i></a>
             </div>
-
-            <ul id="slide-out" class="side-nav">
-                <li><a href="{{urlFor route='home'}}">ראשי</a></li>
-                <li><a href="{{pathFor 'sales'}}">מבצעים</a></li>
-                <li><a href="{{pathFor 'special_events'}}">ארועים מיוחדים</a></li>
-                <li><a href="{{pathFor 'business'}}">עסקים מקומיים</a></li>
-                <li><a href="{{pathFor 'mutual_help'}}">עזרה הדדית</a></li>
-                <li><a href="{{pathFor 'lost_found'}}">אבידות</a></li>
-                <!--TODO add info_pages links-->
-
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </template>
 
 

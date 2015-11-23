@@ -5,12 +5,22 @@ Template.register.events({
 		var tel = $('[type=tel]').val();
 		var email = $('[type=email]').val();
         var password = $('[type=password]').val();
+		var gender = $('[name=gender]:checked').val();
+		var color;
+		if (gender == 'male') {
+			 color = 'cyan';
+		}else{
+			 color = 'pink';
+		}
+
         Accounts.createUser({
             email: email,
             password: password,
             profile: {
             	name: name,
-            	tel: tel
+            	tel: tel,
+				gender: gender,
+				color: color
             }
         },function(error){
         	if (error){
